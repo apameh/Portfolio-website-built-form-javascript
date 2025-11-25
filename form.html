@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+       <link href="form.css" rel="stylesheet" />
+        <script src="form.js"></script>
+  
+</head>
+<body>
+<form id="form" name="form" method="post" action="form.php" onsubmit="return validate()" >
+    <div>
+        <div>نام</div>
+        <div><input type="text" name="firstname" id="firstname" /> </div>
+        <div id="firstname_err"></div>
+    </div>
+    <div>
+        <div>نام خانوادگی</div>
+        <div><input type="text" name="family" id="family" /> </div>
+        <div id="family_err"></div>
+    </div>
+    <div>
+        <div> کد دانشجویی </div>
+        <div><input type="text" name="ids" id="ids" /> </div>
+        <div id="ids_err"></div>
+    </div>
+
+    <div>
+        <div>رمز عبور</div>
+        <div><input type="password" name="pass1" id="pass1" /> </div>
+        <div id="pass1_err"></div>
+    </div>
+    <div>
+        <div>تکرار رمز عبور</div>
+        <div><input type="password" name="pass2" id="pass2" /> </div>
+        <div id="pass2_err"></div>
+    </div>
+
+    <div>
+        <div>کد ملی</div>
+        <div><input type="text" name="nc" id="nc" /> </div>
+        <div id="nc_err"></div>
+    </div>
+
+    <div>
+        <div>تحصیلات</div>
+        <div>
+            <select name="edu" id="edu">
+                <option selected="selected" value="triple dash">---</option>
+                <option value="high school">دیپلم</option>
+                <option value="BS">لیسانس</option>
+                <option value="MS">فوق لیسانس</option>
+                <option value="PhD">دکترا</option>
+            </select>
+        </div>
+        <div id="edu_err"></div>
+    </div>
+    <div>
+        <div>جنسیت</div>
+        <div>
+            <input type="radio" name="sex" id="sex1" />&nbsp;&nbsp;<label>مرد</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" id="sex2" />&nbsp;&nbsp;<label>زن</label>
+        </div>
+
+        <div id="sex_err"></div>
+    </div>
+
+
+
+
+    <div>
+        <div> انواع کتاب  </div>
+        <div>
+            <input type="checkbox" name="interest" id="in1" value="art" />&nbsp;<label> فناوری </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="interest" id="in2" value="music" />&nbsp;<label> تاریخی  </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="interest" id="in3" value="movie" />&nbsp;<label>  کامپیوتر </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="interest" id="in4" value="sport" />&nbsp;<label> ورزشی </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="interest" id="in5" value="IT" />&nbsp;<label> علمی </label>
+        </div>
+        <div id="interest_err"></div>
+    </div>
+    <div class="textarea-row">
+        <div>توضیحات</div>
+        <div><textarea name="brief" id="brief" /> </textarea></div>
+        <div id="brief_err"></div>
+    </div>
+    <div>
+        <div></div>
+        <div>
+            <input type="submit" value="ثبت فرم" />
+            <input type="reset" value="پاک کردن" />
+        </div>
+        <div></div>
+    </div>
+
+
+
+</form>
+
+</body>
+</html>
